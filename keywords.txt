@@ -1,0 +1,51 @@
+# -----------------------------------------
+# Syntax colouring for library
+# -----------------------------------------
+
+# Datatypes (such as objects)
+HD44780LCD	KEYWORD1
+
+#Methods / functions
+
+PCF8574_LCDInit	KEYWORD2
+PCF8574_LCDDisplayON	KEYWORD2
+PCF8574_LCDResetScreen	KEYWORD2
+PCF8574_LCDBackLightSet	KEYWORD2
+PCF8574_LCD_I2C_ON	KEYWORD2
+PCF8574_LCDSendString	KEYWORD2
+PCF8574_LCDSendChar	KEYWORD2
+PCF8574_LCDCreateCustomChar	KEYWORD2
+PCF8574_LCDPrintCustomChar	KEYWORD2
+PCF8574_LCDMoveCursor	KEYWORD2
+PCF8574_LCDScroll	KEYWORD2
+PCF8574_LCDGOTO	KEYWORD2
+PCF8574_LCDClearLine	KEYWORD2
+PCF8574_LCDClearScreen	KEYWORD2
+PCF8574_LCDClearScreenCmd	KEYWORD2
+PCF8574_LCDHome	KEYWORD2
+PCF8574_LCDChangeEntryMode	KEYWORD2
+
+LCDLineNumber_e	KEYWORD2
+LCDEntryMode_e	KEYWORD2
+LCDCursorType_e	KEYWORD2
+LCDDirectionType_e	KEYWORD2
+
+# Constants
+
+LCDEntryModeOne	LITERAL1
+LCDEntryModeTwo	LITERAL1
+LCDEntryModeThree	LITERAL1
+LCDEntryModeFour	LITERAL1
+
+LCDCursorTypeOff	LITERAL1
+LCDCursorTypeBlink	LITERAL1
+LCDCursorTypeOn	LITERAL1
+LCDCursorTypeOnBlink	LITERAL1
+
+LCDMoveRight	LITERAL1
+LCDMoveLeft	LITERAL1
+
+LCDLineNumberOne	LITERAL1
+LCDLineNumberTwo	LITERAL1
+LCDLineNumberThree	LITERAL1
+LCDLineNumberFour	LITERAL1
