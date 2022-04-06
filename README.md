@@ -5,11 +5,12 @@ Table of contents
 ---------------------------
 
   * [Overview](#overview)
+  * [Installation](#installation)
   * [Output](#output)
 
 Overview
 --------------------
-* Name : HD44780_LCD_RPI
+* Name : HD44780_LCD_PCF8574
 * Description :
 
 0. Library to support the HD44780 LCD , (I2C PCF8574 "backpack" interface) 
@@ -19,8 +20,18 @@ Overview
 3. Custom character support + print class for numerical data.
 4. Hardware I2C 
 5. Tested on size 16x02 only but may work on other sizes (20x4 , 16X4 etc)
+6. Tested on arduino UNO/NANO only at present.
 
 * Author: Gavin Lyons
+
+Installation
+------------------------------
+
+The library is NOT included in the official Arduino library manger list at present.
+
+See link below for instruction for manually installation method.
+
+[Installing Additional Arduino Libraries guide](https://www.arduino.cc/en/Guide/Libraries)
 
 Output
 ---------------------
