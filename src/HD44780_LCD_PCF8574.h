@@ -22,6 +22,8 @@
 
 // Section: Defines 
 
+//#define LCD_SERIAL_DEBUG // comment in for serial debug I2C errors
+
 // Command Byte Codes See  URL : dinceraydin.com/lcd/commands.htm for HD44780 CMDs
 
 #define LCD_MODE_8BIT 0x38 // Function set (8-bit interface, 2 lines, 5*7 Pixels)
@@ -87,6 +89,7 @@ typedef enum {
 
 
 // Section: Class's
+
 class HD44780LCD : public Print{ 
   public:
 	HD44780LCD(uint8_t NumRow, uint8_t NumCol, uint8_t I2Caddress);
@@ -96,8 +99,6 @@ class HD44780LCD : public Print{
 	void PCF8574_LCDDisplayON(bool );
 	void PCF8574_LCDResetScreen(LCDCursorType_e);
 	void PCF8574_LCDBackLightSet(bool);
-	
-	void PCF8574_LCD_I2C_ON(void);
 
 	void PCF8574_LCDSendString (char *str);
 	void PCF8574_LCDSendChar (char data);
@@ -122,6 +123,7 @@ class HD44780LCD : public Print{
   private:
 	void PCF8574_LCDSendCmd (unsigned char cmd);
 	void PCF8574_LCDSendData (unsigned char data);
+	bool PCF8574_LCD_I2C_ON(void);
 	
 	uint8_t _LCDBackLight= LCD_BACKLIGHTON_MASK;
 	//I2C  address for I2C module PCF8574 backpack on LCD

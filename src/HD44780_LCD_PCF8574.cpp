@@ -16,19 +16,30 @@ HD44780LCD  :: HD44780LCD(uint8_t NumRow, uint8_t NumCol, uint8_t I2Caddress)
 //  Func Desc: Send data byte to  LCD via I2C
 //  Param1: data byte
 void HD44780LCD::PCF8574_LCDSendData(unsigned char data) {
-	unsigned char data_l, data_u;
-	uint8_t data_I2C[4];
-
-	data_l = (data << 4)&0xf0; //select lower nibble by moving it to the upper nibble position
-	data_u = data & 0xf0; //select upper nibble
-	data_I2C[0] = data_u | (LCD_DATA_BYTE_ON & _LCDBackLight); //enable=1 and rs =1 1101  YYYY-X-en-X-rs
-	data_I2C[1] = data_u | (LCD_DATA_BYTE_OFF & _LCDBackLight); //enable=0 and rs =1 1001 YYYY-X-en-X-rs
-	data_I2C[2] = data_l | (LCD_DATA_BYTE_ON & _LCDBackLight); //enable=1 and rs =1 1101  YYYY-X-en-X-rs
-	data_I2C[3] = data_l | (LCD_DATA_BYTE_OFF &  _LCDBackLight); //enable=0 and rs =1 1001 YYYY-X-en-X-rs
+	unsigned char dataLower, dataUpper;
+	uint8_t dataI2C[4];
+	uint8_t TransmissionCode = 0;
+	
+	dataLower = (data << 4)&0xf0; //select lower nibble by moving it to the upper nibble position
+	dataUpper = data & 0xf0; //select upper nibble
+	dataI2C[0] = dataUpper | (LCD_DATA_BYTE_ON & _LCDBackLight); //enable=1 and rs =1 1101  YYYY-X-en-X-rs
+	dataI2C[1] = dataUpper | (LCD_DATA_BYTE_OFF & _LCDBackLight); //enable=0 and rs =1 1001 YYYY-X-en-X-rs
+	dataI2C[2] = dataLower | (LCD_DATA_BYTE_ON & _LCDBackLight); //enable=1 and rs =1 1101  YYYY-X-en-X-rs
+	dataI2C[3] = dataLower | (LCD_DATA_BYTE_OFF &  _LCDBackLight); //enable=0 and rs =1 1001 YYYY-X-en-X-rs
 
 	Wire.beginTransmission(_LCDSlaveAddresI2C);
-	Wire.write(data_I2C, 4) ;
-	Wire.endTransmission();
+	Wire.write(dataI2C, 4) ;
+	TransmissionCode  = Wire.endTransmission();
+	if (TransmissionCode!= 0)
+	{
+		#ifdef LCD_SERIAL_DEBUG
+			Serial.print("1203 : ");
+			Serial.print("I2C error  wire.endTransmission : ");
+			Serial.print("Tranmission code : ");
+			Serial.println(TransmissionCode);
+			delay(100);
+		#endif
+	}
 
 }
 
@@ -36,19 +47,30 @@ void HD44780LCD::PCF8574_LCDSendData(unsigned char data) {
 //  Param1: command byte
 
 void HD44780LCD::PCF8574_LCDSendCmd(unsigned char cmd) {
-	unsigned char cmd_l, cmd_u;
-	uint8_t cmd_I2C[4];
+	unsigned char cmdLower, cmdupper;
+	uint8_t cmdI2C[4];
+	uint8_t TransmissionCode = 0;
 	
-	cmd_l = (cmd << 4)&0xf0; //select lower nibble by moving it to the upper nibble position
-	cmd_u = cmd & 0xf0; //select upper nibble
-	cmd_I2C[0] = cmd_u | (LCD_CMD_BYTE_ON & _LCDBackLight); // YYYY-1100 YYYY-led-en-rw-rs ,enable=1 and rs =0
-	cmd_I2C[1] = cmd_u | (LCD_CMD_BYTE_OFF & _LCDBackLight); // YYYY-1000 YYYY-led-en-rw-rs ,enable=0 and rs =0
-	cmd_I2C[2] = cmd_l | (LCD_CMD_BYTE_ON & _LCDBackLight); // YYYY-1100 YYYY-led-en-rw-rs ,enable=1 and rs =0
-	cmd_I2C[3] = cmd_l | (LCD_CMD_BYTE_OFF & _LCDBackLight); // YYYY-1000 YYYY-led-en-rw-rs ,enable=0 and rs =0
+	cmdLower = (cmd << 4)&0xf0; //select lower nibble by moving it to the upper nibble position
+	cmdupper = cmd & 0xf0; //select upper nibble
+	cmdI2C[0] = cmdupper | (LCD_CMD_BYTE_ON & _LCDBackLight); // YYYY-1100 YYYY-led-en-rw-rs ,enable=1 and rs =0
+	cmdI2C[1] = cmdupper | (LCD_CMD_BYTE_OFF & _LCDBackLight); // YYYY-1000 YYYY-led-en-rw-rs ,enable=0 and rs =0
+	cmdI2C[2] = cmdLower | (LCD_CMD_BYTE_ON & _LCDBackLight); // YYYY-1100 YYYY-led-en-rw-rs ,enable=1 and rs =0
+	cmdI2C[3] = cmdLower | (LCD_CMD_BYTE_OFF & _LCDBackLight); // YYYY-1000 YYYY-led-en-rw-rs ,enable=0 and rs =0
 	
 	Wire.beginTransmission(_LCDSlaveAddresI2C);
-	Wire.write(cmd_I2C, 4) ;
-	Wire.endTransmission();
+	Wire.write(cmdI2C, 4) ;
+	TransmissionCode  = Wire.endTransmission();
+	if (TransmissionCode!= 0)
+	{
+		#ifdef LCD_SERIAL_DEBUG
+			Serial.print("1202 : ");
+			Serial.print("I2C error  wire.endTransmission : ");
+			Serial.print("Tranmission code : ");
+			Serial.println(TransmissionCode);
+			delay(100);
+		#endif
+	}
 
 }
 
@@ -130,6 +152,12 @@ void HD44780LCD::PCF8574_LCDDisplayON(bool OnOff) {
 
 void HD44780LCD::PCF8574_LCDInit(LCDCursorType_e CursorType) {
 
+	if (PCF8574_LCD_I2C_ON()  != true)
+	{
+		delay(2000);
+		return;
+	}
+	
 	delay(15);
 	PCF8574_LCDSendCmd(LCD_HOME);
 	delay(5);
@@ -243,9 +271,37 @@ void HD44780LCD::PCF8574_LCDBackLightSet(bool OnOff)
 
 
 // Func Desc: Setup I2C settings
-void HD44780LCD::PCF8574_LCD_I2C_ON()
+// Returns false if PCF8574 fails to appear on I2C bus
+// Returns true if ok 
+// Note if LCD_SERIAL_DEBUG enabled will print I2C error code to screen
+//    wire.endTransmission() return:
+//    0 : Success
+//    1 : Data length error
+//     2 : NACK on transmit of the address.
+//     3 : NACK on transmit of the data.
+//    4 :  Some other error
+bool HD44780LCD::PCF8574_LCD_I2C_ON()
 {
+	uint8_t TransmissionCode = 0;
 	Wire.begin();
+	Wire.setClock(100000UL);  
+	Wire.beginTransmission(_LCDSlaveAddresI2C);
+	TransmissionCode  = Wire.endTransmission();
+	if (TransmissionCode!= 0)
+		{
+			#ifdef LCD_SERIAL_DEBUG
+				Serial.print("1201 : ");
+				Serial.print("I2C error  wire.endTransmission : ");
+				Serial.print("Tranmission code : ");
+				Serial.println(TransmissionCode);
+			#endif
+			return false;      //Check if the PCF8574 is connected
+		}else{
+			#ifdef LCD_SERIAL_DEBUG 
+				Serial.print("I2C Success Init : ");
+			#endif
+			return true;
+		}
 }
 
 
@@ -285,6 +341,7 @@ void HD44780LCD::PCF8574_LCDHome(void) {
 void HD44780LCD::PCF8574_LCDChangeEntryMode(LCDEntryMode_e newEntryMode)
 {
 	PCF8574_LCDSendCmd(newEntryMode);
+	delay(3); // Requires a delay
 }
 
 // **** EOF ****

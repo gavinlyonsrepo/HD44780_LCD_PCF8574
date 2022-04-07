@@ -41,9 +41,7 @@ void endTest(void);
 // Section: Setup
 
 void setup() {
-  // put your setup code here, to run once: 
-  myLCD.PCF8574_LCD_I2C_ON();
-  delay(DISPLAY_DELAY_1);
+  delay(50);
   myLCD.PCF8574_LCDInit(LCDCursorTypeOn);
   myLCD.PCF8574_LCDClearScreen();
   myLCD.PCF8574_LCDBackLightSet(true);
