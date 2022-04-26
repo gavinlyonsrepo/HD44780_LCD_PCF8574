@@ -1,0 +1,355 @@
+2022-04-26 18:40:06 Using browser-only version of superagent in non-browser environment
+2022-04-26 18:40:06 Configuring to accept webviews on '^.+\.webview\..+$' hostname.
+2022-04-26 18:40:06 root INFO Configuration directory URI: 'file:///home/gavin/.theia'
+2022-04-26 18:40:06 root INFO Theia app listening on http://localhost:38863.
+2022-04-26 18:40:06 root WARN The local plugin referenced by local-dir:/home/gavin/.arduinoIDE/plugins does not exist.
+2022-04-26 18:40:06 root WARN The local plugin referenced by local-dir:/home/gavin/.arduinoIDE/extensions does not exist.
+2022-04-26 18:40:06 root WARN The local plugin referenced by local-dir:/home/gavin/.arduinoProIDE/plugins does not exist.
+2022-04-26 18:40:06 root INFO PluginTheiaDirectoryHandler: accepting plugin with path
+2022-04-26 18:40:06 root INFO Resolved "cortex-debug" to a VS Code extension "cortex-debug@0.3.10" with engines:
+2022-04-26 18:40:06 root INFO PluginTheiaDirectoryHandler: accepting plugin with path
+2022-04-26 18:40:06 root INFO Resolved "vscode-arduino-tools" to a VS Code extension "vscode-arduino-tools@0.0.2-beta.2" with engines:
+2022-04-26 18:40:06 root INFO PluginTheiaDirectoryHandler: accepting plugin with path
+2022-04-26 18:40:06 root INFO Resolved "vscode-builtin-cpp" to a VS Code extension "cpp@1.52.1" with engines:
+2022-04-26 18:40:06 root INFO PluginTheiaDirectoryHandler: accepting plugin with path
+2022-04-26 18:40:06 root INFO Resolved "vscode-builtin-json" to a VS Code extension "json@1.46.1" with engines:
+2022-04-26 18:40:06 root INFO PluginTheiaDirectoryHandler: accepting plugin with path
+2022-04-26 18:40:06 root INFO Resolved "vscode-builtin-json-language-features" to a VS Code extension "json-language-features@1.46.1" with engines:
+2022-04-26 18:40:06 root INFO Deploying backend plugin "cortex-debug@0.3.10" from "/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/plugins/cortex-debug/extension/dist/extension"
+2022-04-26 18:40:06 root INFO Deploying backend plugin "vscode-arduino-tools@0.0.2-beta.2" from "/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/plugins/vscode-arduino-tools/extension/dist/bundle"
+2022-04-26 18:40:06 root INFO Deploying backend plugin "cpp@1.52.1" from "/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/plugins/vscode-builtin-cpp/extension"
+2022-04-26 18:40:06 root INFO Deploying backend plugin "json@1.46.1" from "/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/plugins/vscode-builtin-json/extension"
+2022-04-26 18:40:06 daemon INFO Starting daemon from /home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/arduino-ide-extension/build/arduino-cli...
+2022-04-26 18:40:06 root INFO Deploying backend plugin "json-language-features@1.46.1" from "/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/plugins/vscode-builtin-json-language-features/extension/client/dist/jsonMain"
+2022-04-26 18:40:06 root INFO Deploy plugins list took: 65.8 ms
+2022-04-26 18:40:06 daemon INFO Using config file: /home/gavin/.arduinoIDE/arduino-cli.yaml
+2022-04-26 18:40:06 daemon INFO arduino-cli version 0.21.0
+2022-04-26 18:40:06 daemon INFO Executing `arduino-cli daemon`
+2022-04-26 18:40:06 daemon INFO Setting up Prometheus metrics on :9090/metrics
+2022-04-26 18:40:06 daemon INFO {"IP":"127.0.0.1","Port":"44753"}
+2022-04-26 18:40:06 daemon INFO Daemon is running.
+2022-04-26 18:40:09 daemon INFO Adding libraries dir [dir: /home/gavin/Documents/Tech/arduino/libraries, location: user]
+2022-04-26 18:40:09 daemon INFO URL: https://downloads.arduino.cc/packages/package_index.json
+2022-04-26 18:40:09 daemon INFO Updating index [url: https://downloads.arduino.cc/packages/package_index.json]
+2022-04-26 18:40:09 root INFO Git askpass helper is listening on http://127.0.0.1:45079.
+2022-04-26 18:40:09 root INFO Using Git [2.34.1] from the PATH. (/usr/bin/git)
+2022-04-26 18:40:09 root INFO Updating index: package_index.json completed.
+2022-04-26 18:40:10 root INFO Updating index: package_index.json.sig completed.
+2022-04-26 18:40:10 daemon INFO Checking signature [error: opening signature file: open /tmp/244686392.sig: no such file or directory, index: /tmp/244686392, signaturefile: /tmp/244686392.sig]
+2022-04-26 18:40:10 daemon INFO URL: http://dan.drown.org/stm32duino/package_STM32duino_index.json
+2022-04-26 18:40:10 daemon INFO Updating index [url: http://dan.drown.org/stm32duino/package_STM32duino_index.json]
+2022-04-26 18:40:10 root WARN Frontend CommonFrontendContribution.configure is slow, took: 392.0 ms
+2022-04-26 18:40:10 root WARN Frontend commands.onStart is slow, took: 466.1 ms
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/body-parser
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/cookie
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/dompurify
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/express
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/fs-extra
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/lodash.debounce
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/lodash.throttle
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/markdown-it
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/react
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/react-dom
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/react-virtualized
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/route-parser
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/safer-buffer
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/ws
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/yargs
+2022-04-26 18:40:10 root WARN Failed to resolve module: @theia/monaco
+2022-04-26 18:40:10 root WARN Failed to resolve module: @theia/editor
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/multer
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/rimraf
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/tar-fs
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/uuid
+2022-04-26 18:40:10 root WARN Failed to resolve module: @theia/navigator
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/p-queue
+2022-04-26 18:40:10 root WARN Failed to resolve module: @theia/preferences
+2022-04-26 18:40:10 root WARN Failed to resolve module: @theia/editor-preview
+2022-04-26 18:40:10 root WARN Failed to resolve module: @theia/keymaps
+2022-04-26 18:40:10 root WARN Failed to resolve module: @theia/messages
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/diff
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/mime
+2022-04-26 18:40:10 root WARN Failed to resolve module: filenamify
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/request
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/atob
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/auth0-js
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/btoa
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/dateformat
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/deepmerge
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/glob
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/google-protobuf
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/js-yaml
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/keytar
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/ncp
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/node-fetch
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/ps-tree
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/react-select
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/react-tabs
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/temp
+2022-04-26 18:40:10 root WARN Failed to resolve module: @types/which
+2022-04-26 18:40:10 root WARN Frontend keybindings.onStart is slow, took: 269.2 ms
+2022-04-26 18:40:10 root WARN Frontend TabBarToolbarRegistry.onStart is slow, took: 101.5 ms
+2022-04-26 18:40:10 root INFO Updating index: package_STM32duino_index.json completed.
+2022-04-26 18:40:10 daemon INFO Checking signature [error: opening signature file: open /tmp/165936170.sig: no such file or directory, index: /tmp/165936170, signaturefile: /tmp/165936170.sig]
+2022-04-26 18:40:10 daemon INFO Updating libraries index
+2022-04-26 18:40:11 root INFO Updating index: library_index.json.gz completed.
+2022-04-26 18:40:11 root ERROR DefaultJsonSchemaContribution.registerSchemas is taking more than 500.0 ms, new schemas are ignored.
+2022-04-26 18:40:11 root INFO Updating index: library_index.json.sig completed.
+2022-04-26 18:40:11 daemon INFO Checking signature [index: /home/gavin/.arduino15/package_index.json, signaturefile: /home/gavin/.arduino15/package_index.json.sig, trusted: true]
+2022-04-26 18:40:11 daemon INFO Checking signature [error: opening signature file: open /home/gavin/.arduino15/package_STM32duino_index.json.sig: no such file or directory, index: /home/gavin/.arduino15/package_STM32duino_index.json, signaturefile: /home/gavin/.arduino15/package_STM32duino_index.json.sig]
+2022-04-26 18:40:11 daemon INFO Loading hardware from: /home/gavin/.arduino15/packages
+2022-04-26 18:40:11 daemon INFO Loading package ATTinyCore from: /home/gavin/.arduino15/packages/ATTinyCore/hardware
+2022-04-26 18:40:11 daemon INFO Adding monitor tool [protocol: serial, tool: builtin:serial-monitor]
+2022-04-26 18:40:11 daemon INFO Loaded platform [platform: {ID:"ATTinyCore:avr",Installed:"1.5.2",Latest:"1.5.2",Name:"ATTinyCore"}]
+2022-04-26 18:40:11 daemon INFO Checking existence of 'tools' path: /home/gavin/.arduino15/packages/ATTinyCore/tools
+2022-04-26 18:40:11 daemon INFO Loading tools from dir: /home/gavin/.arduino15/packages/ATTinyCore/tools
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 2.5-azd1b]
+2022-04-26 18:40:11 daemon INFO Loading package STM32 from: /home/gavin/.arduino15/packages/STM32/hardware
+2022-04-26 18:40:11 daemon INFO Adding monitor tool [protocol: serial, tool: builtin:serial-monitor]
+2022-04-26 18:40:11 daemon INFO Loaded platform [platform: {ID:"STM32:stm32",Installed:"1.9.0",Latest:"1.9.0",Name:"STM32 Boards (selected from submenu)"}]
+2022-04-26 18:40:11 daemon INFO Checking existence of 'tools' path: /home/gavin/.arduino15/packages/STM32/tools
+2022-04-26 18:40:11 daemon INFO Loading tools from dir: /home/gavin/.arduino15/packages/STM32/tools
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 5.5.1]
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 1.4.0]
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 9.2.1-1.1]
+2022-04-26 18:40:11 daemon INFO Loading package arduino from: /home/gavin/.arduino15/packages/arduino/hardware
+2022-04-26 18:40:11 daemon INFO Checking signature [error: opening signature file: open /home/gavin/.arduino15/packages/arduino/hardware/avr/1.8.5/installed.json.sig: no such file or directory, index: /home/gavin/.arduino15/packages/arduino/hardware/avr/1.8.5/installed.json, signaturefile: /home/gavin/.arduino15/packages/arduino/hardware/avr/1.8.5/installed.json.sig]
+2022-04-26 18:40:11 daemon INFO Adding monitor tool [protocol: serial, tool: builtin:serial-monitor]
+2022-04-26 18:40:11 daemon INFO Loaded platform [platform: {ID:"arduino:avr",Installed:"1.8.5",Latest:"1.8.5",Name:"Arduino AVR Boards"}]
+2022-04-26 18:40:11 daemon INFO Checking existence of 'tools' path: /home/gavin/.arduino15/packages/arduino/tools
+2022-04-26 18:40:11 daemon INFO Loading tools from dir: /home/gavin/.arduino15/packages/arduino/tools
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 1.3.0 Systems: [OS: i686-linux-gnu, OS: x86_64-linux-gnu, OS: arm-linux-gnueabihf, OS: aarch64-linux-gnu, OS: i386-apple-darwin11, OS: i686-mingw32]]
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 4.8.3-2014q1 Systems: [OS: arm-linux-gnueabihf, OS: i686-mingw32, OS: x86_64-apple-darwin, OS: x86_64-pc-linux-gnu, OS: i686-pc-linux-gnu]]
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 7.3.0-atmel3.6.1-arduino7 Systems: [OS: arm-linux-gnueabihf, OS: aarch64-linux-gnu, OS: x86_64-apple-darwin14, OS: i686-mingw32, OS: i686-linux-gnu, OS: x86_64-linux-gnu]]
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 6.3.0-arduino17 Systems: [OS: arm-linux-gnueabihf, OS: aarch64-linux-gnu, OS: x86_64-apple-darwin12, OS: x86_64-linux-gnu, OS: i686-linux-gnu, OS: i686-mingw32]]
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 6.3.0-arduino18 Systems: [OS: arm-linux-gnueabihf, OS: aarch64-linux-gnu, OS: x86_64-apple-darwin12, OS: x86_64-linux-gnu, OS: i686-mingw32]]
+2022-04-26 18:40:11 daemon INFO Loading package attiny from: /home/gavin/.arduino15/packages/attiny/hardware
+2022-04-26 18:40:11 daemon INFO Adding monitor tool [protocol: serial, tool: builtin:serial-monitor]
+2022-04-26 18:40:11 daemon INFO Loaded platform [platform: {ID:"attiny:avr",Installed:"1.0.2",Latest:"1.0.2",Name:"ATtiny Microcontrollers"}]
+2022-04-26 18:40:11 daemon INFO Loading package builtin from: /home/gavin/.arduino15/packages/builtin
+2022-04-26 18:40:11 daemon INFO Checking existence of 'tools' path: /home/gavin/.arduino15/packages/builtin/tools
+2022-04-26 18:40:11 daemon INFO Loading tools from dir: /home/gavin/.arduino15/packages/builtin/tools
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 5.8-arduino11 Systems: [OS: i686-pc-linux-gnu, OS: x86_64-pc-linux-gnu, OS: i686-mingw32, OS: x86_64-apple-darwin, OS: arm-linux-gnueabihf, OS: aarch64-linux-gnu]]
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 1.0.5 Systems: [OS: i686-pc-linux-gnu, OS: x86_64-pc-linux-gnu, OS: i686-mingw32, OS: x86_64-mingw32, OS: x86_64-apple-darwin, OS: arm-linux-gnueabihf, OS: arm64-linux-gnueabihf]]
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 1.3.2 Systems: [OS: i686-pc-linux-gnu, OS: x86_64-pc-linux-gnu, OS: i686-mingw32, OS: x86_64-mingw32, OS: x86_64-apple-darwin, OS: arm-linux-gnueabihf, OS: arm64-linux-gnueabihf]]
+2022-04-26 18:40:11 daemon INFO Loaded tool [tool: Version: 0.9.1 Systems: [OS: i686-pc-linux-gnu, OS: x86_64-pc-linux-gnu, OS: i686-mingw32, OS: x86_64-mingw32, OS: x86_64-apple-darwin, OS: arm-linux-gnueabihf, OS: arm64-linux-gnueabihf]]
+2022-04-26 18:40:11 daemon INFO Loading package esp32 from: /home/gavin/.arduino15/packages/esp32/hardware
+2022-04-26 18:40:12 daemon INFO Adding monitor tool [protocol: serial, tool: builtin:serial-monitor]
+2022-04-26 18:40:12 daemon INFO Loaded platform [platform: {ID:"esp32:esp32",Installed:"2.0.2",Latest:"2.0.2",Name:"ESP32 Arduino"}]
+2022-04-26 18:40:12 daemon INFO Checking existence of 'tools' path: /home/gavin/.arduino15/packages/esp32/tools
+2022-04-26 18:40:12 daemon INFO Loading tools from dir: /home/gavin/.arduino15/packages/esp32/tools
+2022-04-26 18:40:12 daemon INFO Loaded tool [tool: Version: 3.1.0]
+2022-04-26 18:40:12 daemon INFO Loaded tool [tool: Version: 3.0.0-gnu12-dc7f933]
+2022-04-26 18:40:12 daemon INFO Loaded tool [tool: Version: 0.2.3]
+2022-04-26 18:40:12 daemon INFO Loaded tool [tool: Version: gcc8_4_0-esp-2021r2]
+2022-04-26 18:40:12 daemon INFO Loaded tool [tool: Version: gcc8_4_0-esp-2021r2]
+2022-04-26 18:40:12 daemon INFO Loaded tool [tool: Version: gcc8_4_0-esp-2021r2]
+2022-04-26 18:40:12 daemon INFO Loading package esp8266 from: /home/gavin/.arduino15/packages/esp8266/hardware
+2022-04-26 18:40:12 daemon INFO Adding monitor tool [protocol: serial, tool: builtin:serial-monitor]
+2022-04-26 18:40:12 daemon INFO Loaded platform [platform: {ID:"esp8266:esp8266",Installed:"3.0.2",Latest:"3.0.2",Name:"ESP8266 Boards (3.0.2)"}]
+2022-04-26 18:40:12 daemon INFO Checking existence of 'tools' path: /home/gavin/.arduino15/packages/esp8266/tools
+2022-04-26 18:40:12 daemon INFO Loading tools from dir: /home/gavin/.arduino15/packages/esp8266/tools
+2022-04-26 18:40:12 daemon INFO Loaded tool [tool: Version: 3.0.4-gcc10.3-1757bed]
+2022-04-26 18:40:12 daemon INFO Loaded tool [tool: Version: 3.0.4-gcc10.3-1757bed]
+2022-04-26 18:40:12 daemon INFO Loaded tool [tool: Version: 3.7.2-post1]
+2022-04-26 18:40:12 daemon INFO Loaded tool [tool: Version: 3.0.4-gcc10.3-1757bed]
+2022-04-26 18:40:12 daemon INFO Loading package stm32duino from: /home/gavin/.arduino15/packages/stm32duino/hardware
+2022-04-26 18:40:12 daemon INFO Adding monitor tool [protocol: serial, tool: builtin:serial-monitor]
+2022-04-26 18:40:12 daemon INFO Loaded platform [platform: {ID:"stm32duino:STM32F1",Installed:"2021.5.31",Latest:"2021.5.31",Name:"STM32F1xx/GD32F1xx boards"}]
+2022-04-26 18:40:12 daemon INFO Checking existence of 'tools' path: /home/gavin/.arduino15/packages/stm32duino/tools
+2022-04-26 18:40:12 daemon INFO Loading tools from dir: /home/gavin/.arduino15/packages/stm32duino/tools
+2022-04-26 18:40:12 daemon INFO Loaded tool [tool: Version: 2021.5.31 Systems: [OS: i686-mingw32, OS: x86_64-apple-darwin, OS: i386-apple-darwin, OS: x86_64-pc-linux-gnu, OS: i686-pc-linux-gnu]]
+2022-04-26 18:40:12 daemon INFO Loading hardware from: /home/gavin/Documents/Tech/arduino/hardware
+2022-04-26 18:40:12 daemon INFO Loading package ATTinyCore-1.1.5_manual from: /home/gavin/Documents/Tech/arduino/hardware/ATTinyCore-1.1.5_manual
+2022-04-26 18:40:12 daemon INFO Adding monitor tool [protocol: serial, tool: builtin:serial-monitor]
+2022-04-26 18:40:12 daemon INFO Loaded platform [platform: {ID:"ATTinyCore-1.1.5_manual:avr",Installed:"1.1.5",Latest:"1.1.5",Name:"ATTinyCore"}]
+2022-04-26 18:40:12 daemon INFO Adding libraries dir [dir: /home/gavin/.arduino15/packages/stm32duino/hardware/STM32F1/2021.5.31/libraries, location: platform]
+2022-04-26 18:40:12 daemon INFO Adding libraries dir [dir: /home/gavin/.arduino15/packages/esp32/hardware/esp32/2.0.2/libraries, location: platform]
+2022-04-26 18:40:12 daemon INFO Adding libraries dir [dir: /home/gavin/.arduino15/packages/esp8266/hardware/esp8266/3.0.2/libraries, location: platform]
+2022-04-26 18:40:12 daemon INFO Adding libraries dir [dir: /home/gavin/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries, location: platform]
+2022-04-26 18:40:12 daemon INFO Adding libraries dir [dir: /home/gavin/.arduino15/packages/STM32/hardware/stm32/1.9.0/libraries, location: platform]
+2022-04-26 18:40:12 daemon INFO Adding libraries dir [dir: /home/gavin/Documents/Tech/arduino/hardware/ATTinyCore-1.1.5_manual/avr/libraries, location: platform]
+2022-04-26 18:40:12 daemon INFO Adding libraries dir [dir: /home/gavin/.arduino15/packages/arduino/hardware/avr/1.8.5/libraries, location: platform]
+2022-04-26 18:40:13 daemon INFO starting discovery builtin:serial-discovery process
+2022-04-26 18:40:13 daemon INFO starting discovery builtin:mdns-discovery process
+2022-04-26 18:40:13 daemon INFO started discovery builtin:serial-discovery process
+2022-04-26 18:40:13 daemon INFO sending command HELLO 1 "arduino-cli 0.21.0" to discovery builtin:serial-discovery
+2022-04-26 18:40:13 daemon INFO started discovery builtin:mdns-discovery process
+2022-04-26 18:40:13 daemon INFO sending command HELLO 1 "arduino-cli 0.21.0" to discovery builtin:mdns-discovery
+2022-04-26 18:40:13 daemon INFO from discovery builtin:mdns-discovery received message type: hello, message: OK, protocol version: 1
+2022-04-26 18:40:13 daemon INFO from discovery builtin:serial-discovery received message type: hello, message: OK, protocol version: 1
+2022-04-26 18:40:13 daemon INFO sending command START_SYNC to discovery builtin:serial-discovery
+2022-04-26 18:40:13 daemon INFO sending command START_SYNC to discovery builtin:mdns-discovery
+2022-04-26 18:40:13 daemon INFO from discovery builtin:mdns-discovery received message type: start_sync, message: OK
+2022-04-26 18:40:13 daemon INFO from discovery builtin:serial-discovery received message type: start_sync, message: OK
+2022-04-26 18:40:13 daemon INFO from discovery builtin:serial-discovery received message type: add, port: /dev/ttyUSB0
+2022-04-26 18:40:14 root WARN Frontend EditorNavigationContribution.onStart is slow, took: 3952.0 ms
+2022-04-26 18:40:14 root INFO Checking whether '--no-optional-locks' can be used with the current Git executable. Minimum required version is '2.15.0'.
+2022-04-26 18:40:14 root WARN Frontend WorkspaceService.onStart is slow, took: 475.2 ms
+2022-04-26 18:40:14 root INFO '--no-optional-locks' is a valid Git option for the current Git version: '2.34.1'.
+2022-04-26 18:40:14 root INFO Board config changed: 
+2022-04-26 18:40:15 root INFO Board config changed: 
+2022-04-26 18:40:15 root INFO Changed application state from 'init' to 'started_contributions'.
+2022-04-26 18:40:15 root INFO [hosted-plugin: 22563] PLUGIN_HOST(22563) starting instance
+2022-04-26 18:40:15 root INFO Changed application state from 'started_contributions' to 'attached_shell'.
+2022-04-26 18:40:15 root INFO >>> Restoring the layout state...
+2022-04-26 18:40:15 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4] Waiting for backend deployment took: 707.8 ms [Finished 9.132 s after frontend start]
+2022-04-26 18:40:15 root INFO Board config changed: 
+2022-04-26 18:40:15 serial-service INFO >>> Disposing serial connection...
+2022-04-26 18:40:15 serial-service WARN <<< Not connected. Nothing to dispose.
+2022-04-26 18:40:15 serial-service INFO >>> Disposing serial connection...
+2022-04-26 18:40:15 serial-service WARN <<< Not connected. Nothing to dispose.
+2022-04-26 18:40:16 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4] Sync of 5 plugins took: 757.8 ms [Finished 9.890 s after frontend start]
+2022-04-26 18:40:18 root INFO <<< The layout has been successfully restored.
+2022-04-26 18:40:18 root INFO Changed application state from 'attached_shell' to 'initialized_layout'.
+2022-04-26 18:40:18 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4][marus25.cortex-debug]: Loaded contributions.
+2022-04-26 18:40:18 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4][arduino.vscode-arduino-tools]: Loaded contributions.
+2022-04-26 18:40:18 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4][vscode.cpp]: Loaded contributions.
+2022-04-26 18:40:18 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4][vscode.json]: Loaded contributions.
+2022-04-26 18:40:18 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4][vscode.json-language-features]: Loaded contributions.
+2022-04-26 18:40:18 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4] Load contributions of 5 plugins took: 258.7 ms [Finished 12.479 s after frontend start]
+2022-04-26 18:40:18 root WARN Frontend EditorPreviewTreeDecorator.onDidInitializeLayout is slow, took: 260.1 ms
+2022-04-26 18:40:19 root INFO Finished loading frontend application after 12.558 seconds
+2022-04-26 18:40:19 root WARN 'cpp' language is remapped from 'source.cpp.embedded.macro' to 'source.cpp' scope
+2022-04-26 18:40:19 root WARN a registered grammar configuration for 'cpp' language is overridden
+2022-04-26 18:40:19 root INFO Changed application state from 'initialized_layout' to 'ready'.
+2022-04-26 18:40:20 root INFO [hosted-plugin: 22563] PLUGIN_HOST(22563): PluginManagerExtImpl/init()
+2022-04-26 18:40:20 root INFO [hosted-plugin: 22563] PLUGIN_HOST(22563): initializing(cortex-debug@0.3.10 with /home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init)
+Debugger contribution has been registered: cortex-debug
+2022-04-26 18:40:20 root INFO [hosted-plugin: 22563] PLUGIN_HOST(22563): initializing(vscode-arduino-tools@0.0.2-beta.2 with /home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init)
+2022-04-26 18:40:20 root INFO [hosted-plugin: 22563] PLUGIN_HOST(22563): initializing(cpp@1.52.1 with /home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init)
+2022-04-26 18:40:20 root INFO [hosted-plugin: 22563] PLUGIN_HOST(22563): initializing(json@1.46.1 with /home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init)
+PLUGIN_HOST(22563): initializing(json-language-features@1.46.1 with /home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init)
+2022-04-26 18:40:20 root INFO [hosted-plugin: 22563] PLUGIN_HOST(22563): PluginManagerExtImpl/loadPlugin(/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/plugins/vscode-builtin-json-language-features/extension/client/dist/jsonMain)
+2022-04-26 18:40:20 root INFO [hosted-plugin: 22563] PLUGIN_HOST(22563): PluginManagerExtImpl/loadPlugin(/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/plugins/vscode-arduino-tools/extension/dist/bundle)
+2022-04-26 18:40:20 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4][marus25.cortex-debug]: Started plugin.
+2022-04-26 18:40:20 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4][arduino.vscode-arduino-tools]: Started plugin.
+2022-04-26 18:40:20 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4][vscode.cpp]: Started plugin.
+2022-04-26 18:40:20 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4][vscode.json]: Started plugin.
+2022-04-26 18:40:20 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4][vscode.json-language-features]: Started plugin.
+2022-04-26 18:40:20 root INFO [2225227e-003d-4b36-ac6f-c2c0d9fc81d4] Start of 5 plugins took: 1879.6 ms [Finished 14.384 s after frontend start]
+2022-04-26 18:40:20 root INFO Starting language server: arduino:avr:uno
+2022-04-26 18:40:21 daemon INFO inventory.Store.ConfigFileUsed() /home/gavin/.arduino15/inventory.yaml
+2022-04-26 18:40:21 daemon INFO inventory.Store.ConfigFileUsed() /home/gavin/.arduino15/inventory.yaml
+2022-04-26 18:40:21 daemon INFO Searching tools required for board arduino:avr:uno
+2022-04-26 18:40:21 daemon INFO Required tool [tool: {ToolName:"arduinoOTA",ToolVersion:"1.3.0",ToolPackager:"arduino"}]
+2022-04-26 18:40:21 daemon INFO Required tool [tool: {ToolName:"avr-gcc",ToolVersion:"7.3.0-atmel3.6.1-arduino7",ToolPackager:"arduino"}]
+2022-04-26 18:40:21 daemon INFO Required tool [tool: {ToolName:"avrdude",ToolVersion:"6.3.0-arduino17",ToolPackager:"arduino"}]
+2022-04-26 18:40:21 daemon INFO Adding libraries dir [dir: /home/gavin/ARDUINO/___arduino-1.8.16/libraries, location: ide]
+2022-04-26 18:40:21 daemon INFO Adding libraries dir [dir: /home/gavin/.arduino15/packages/arduino/hardware/avr/1.8.5/libraries, location: platform]
+2022-04-26 18:40:21 daemon INFO Adding libraries dir [dir: /home/gavin/Documents/Tech/arduino/libraries, location: user]
+2022-04-26 18:40:21 daemon INFO Resolving include HD44780_LCD_PCF8574.h for arch avr
+2022-04-26 18:40:21 daemon INFO   found better lib [lib: HD44780_LCD_PCF8574, prio: 643]
+2022-04-26 18:40:21 daemon INFO Resolving include Wire.h for arch avr
+2022-04-26 18:40:21 daemon INFO   found better lib [lib: Wire, prio: 64C]
+2022-04-26 18:41:08 daemon INFO inventory.Store.ConfigFileUsed() /home/gavin/.arduino15/inventory.yaml
+2022-04-26 18:41:08 daemon INFO inventory.Store.ConfigFileUsed() /home/gavin/.arduino15/inventory.yaml
+2022-04-26 18:41:08 daemon INFO Searching tools required for board arduino:avr:uno
+2022-04-26 18:41:08 daemon INFO Required tool [tool: {ToolName:"arduinoOTA",ToolVersion:"1.3.0",ToolPackager:"arduino"}]
+2022-04-26 18:41:08 daemon INFO Required tool [tool: {ToolName:"avr-gcc",ToolVersion:"7.3.0-atmel3.6.1-arduino7",ToolPackager:"arduino"}]
+2022-04-26 18:41:08 daemon INFO Required tool [tool: {ToolName:"avrdude",ToolVersion:"6.3.0-arduino17",ToolPackager:"arduino"}]
+2022-04-26 18:41:08 daemon INFO Adding libraries dir [dir: /home/gavin/ARDUINO/___arduino-1.8.16/libraries, location: ide]
+2022-04-26 18:41:08 daemon INFO Adding libraries dir [dir: /home/gavin/.arduino15/packages/arduino/hardware/avr/1.8.5/libraries, location: platform]
+2022-04-26 18:41:08 daemon INFO Adding libraries dir [dir: /home/gavin/Documents/Tech/arduino/libraries, location: user]
+2022-04-26 18:41:08 daemon INFO Resolving include HD44780_LCD_PCF8574.h for arch avr
+2022-04-26 18:41:08 daemon INFO   found better lib [lib: HD44780_LCD_PCF8574, prio: 643]
+2022-04-26 18:41:08 daemon INFO Resolving include Wire.h for arch avr
+2022-04-26 18:41:08 daemon INFO   found better lib [lib: Wire, prio: 64C]
+2022-04-26 18:41:10 daemon INFO inventory.Store.ConfigFileUsed() /home/gavin/.arduino15/inventory.yaml
+2022-04-26 18:41:10 daemon INFO inventory.Store.ConfigFileUsed() /home/gavin/.arduino15/inventory.yaml
+2022-04-26 18:41:10 daemon INFO Searching tools required for board arduino:avr:uno
+2022-04-26 18:41:10 daemon INFO Required tool [tool: {ToolName:"arduinoOTA",ToolVersion:"1.3.0",ToolPackager:"arduino"}]
+2022-04-26 18:41:10 daemon INFO Required tool [tool: {ToolName:"avr-gcc",ToolVersion:"7.3.0-atmel3.6.1-arduino7",ToolPackager:"arduino"}]
+2022-04-26 18:41:10 daemon INFO Required tool [tool: {ToolName:"avrdude",ToolVersion:"6.3.0-arduino17",ToolPackager:"arduino"}]
+2022-04-26 18:41:10 daemon INFO Adding libraries dir [dir: /home/gavin/ARDUINO/___arduino-1.8.16/libraries, location: ide]
+2022-04-26 18:41:10 daemon INFO Adding libraries dir [dir: /home/gavin/.arduino15/packages/arduino/hardware/avr/1.8.5/libraries, location: platform]
+2022-04-26 18:41:10 daemon INFO Adding libraries dir [dir: /home/gavin/Documents/Tech/arduino/libraries, location: user]
+2022-04-26 18:41:10 daemon INFO Resolving include HD44780_LCD_PCF8574.h for arch avr
+2022-04-26 18:41:10 daemon INFO   found better lib [lib: HD44780_LCD_PCF8574, prio: 643]
+2022-04-26 18:41:10 daemon INFO Resolving include Wire.h for arch avr
+2022-04-26 18:41:10 daemon INFO   found better lib [lib: Wire, prio: 64C]
+2022-04-26 18:41:12 daemon INFO inventory.Store.ConfigFileUsed() /home/gavin/.arduino15/inventory.yaml
+2022-04-26 18:41:12 daemon INFO inventory.Store.ConfigFileUsed() /home/gavin/.arduino15/inventory.yaml
+2022-04-26 18:41:12 daemon INFO Searching tools required for board arduino:avr:uno
+2022-04-26 18:41:12 daemon INFO Required tool [tool: {ToolName:"arduinoOTA",ToolVersion:"1.3.0",ToolPackager:"arduino"}]
+2022-04-26 18:41:12 daemon INFO Required tool [tool: {ToolName:"avr-gcc",ToolVersion:"7.3.0-atmel3.6.1-arduino7",ToolPackager:"arduino"}]
+2022-04-26 18:41:12 daemon INFO Required tool [tool: {ToolName:"avrdude",ToolVersion:"6.3.0-arduino17",ToolPackager:"arduino"}]
+2022-04-26 18:41:12 daemon INFO Adding libraries dir [dir: /home/gavin/ARDUINO/___arduino-1.8.16/libraries, location: ide]
+2022-04-26 18:41:12 daemon INFO Adding libraries dir [dir: /home/gavin/.arduino15/packages/arduino/hardware/avr/1.8.5/libraries, location: platform]
+2022-04-26 18:41:12 daemon INFO Adding libraries dir [dir: /home/gavin/Documents/Tech/arduino/libraries, location: user]
+2022-04-26 18:41:12 daemon INFO Resolving include HD44780_LCD_PCF8574.h for arch avr
+2022-04-26 18:41:12 daemon INFO   found better lib [lib: HD44780_LCD_PCF8574, prio: 643]
+2022-04-26 18:41:12 daemon INFO Resolving include Wire.h for arch avr
+2022-04-26 18:41:12 daemon INFO   found better lib [lib: Wire, prio: 64C]
+2022-04-26 18:41:12 root ERROR Request upload failed with error: Compilation error: exit status 1
+2022-04-26 18:41:17 serial-service INFO >>> Disposing serial connection...
+2022-04-26 18:41:17 serial-service WARN <<< Not connected. Nothing to dispose.
+2022-04-26 18:41:18 daemon INFO inventory.Store.ConfigFileUsed() /home/gavin/.arduino15/inventory.yaml
+2022-04-26 18:41:18 daemon INFO inventory.Store.ConfigFileUsed() /home/gavin/.arduino15/inventory.yaml
+2022-04-26 18:41:18 daemon INFO Searching tools required for board arduino:avr:uno
+2022-04-26 18:41:18 daemon INFO Required tool [tool: {ToolName:"arduinoOTA",ToolVersion:"1.3.0",ToolPackager:"arduino"}]
+2022-04-26 18:41:18 daemon INFO Required tool [tool: {ToolName:"avr-gcc",ToolVersion:"7.3.0-atmel3.6.1-arduino7",ToolPackager:"arduino"}]
+2022-04-26 18:41:18 daemon INFO Required tool [tool: {ToolName:"avrdude",ToolVersion:"6.3.0-arduino17",ToolPackager:"arduino"}]
+2022-04-26 18:41:18 daemon INFO Adding libraries dir [dir: /home/gavin/ARDUINO/___arduino-1.8.16/libraries, location: ide]
+2022-04-26 18:41:18 daemon INFO Adding libraries dir [dir: /home/gavin/.arduino15/packages/arduino/hardware/avr/1.8.5/libraries, location: platform]
+2022-04-26 18:41:18 daemon INFO Adding libraries dir [dir: /home/gavin/Documents/Tech/arduino/libraries, location: user]
+2022-04-26 18:41:18 daemon INFO Resolving include HD44780_LCD_PCF8574.h for arch avr
+2022-04-26 18:41:18 daemon INFO   found better lib [lib: HD44780_LCD_PCF8574, prio: 643]
+2022-04-26 18:41:18 daemon INFO Resolving include Wire.h for arch avr
+2022-04-26 18:41:18 daemon INFO   found better lib [lib: Wire, prio: 64C]
+2022-04-26 18:41:19 daemon INFO inventory.Store.ConfigFileUsed() /home/gavin/.arduino15/inventory.yaml
+2022-04-26 18:41:19 daemon INFO inventory.Store.ConfigFileUsed() /home/gavin/.arduino15/inventory.yaml
+2022-04-26 18:41:19 daemon INFO Searching tools required for board arduino:avr:uno
+2022-04-26 18:41:19 daemon INFO Required tool [tool: {ToolName:"arduinoOTA",ToolVersion:"1.3.0",ToolPackager:"arduino"}]
+2022-04-26 18:41:19 daemon INFO Required tool [tool: {ToolName:"avr-gcc",ToolVersion:"7.3.0-atmel3.6.1-arduino7",ToolPackager:"arduino"}]
+2022-04-26 18:41:19 daemon INFO Required tool [tool: {ToolName:"avrdude",ToolVersion:"6.3.0-arduino17",ToolPackager:"arduino"}]
+2022-04-26 18:41:19 daemon INFO Adding libraries dir [dir: /home/gavin/ARDUINO/___arduino-1.8.16/libraries, location: ide]
+2022-04-26 18:41:19 daemon INFO Adding libraries dir [dir: /home/gavin/.arduino15/packages/arduino/hardware/avr/1.8.5/libraries, location: platform]
+2022-04-26 18:41:19 daemon INFO Adding libraries dir [dir: /home/gavin/Documents/Tech/arduino/libraries, location: user]
+2022-04-26 18:41:19 daemon INFO Resolving include HD44780_LCD_PCF8574.h for arch avr
+2022-04-26 18:41:19 daemon INFO   found better lib [lib: HD44780_LCD_PCF8574, prio: 643]
+2022-04-26 18:41:19 daemon INFO Resolving include Wire.h for arch avr
+2022-04-26 18:41:19 daemon INFO   found better lib [lib: Wire, prio: 64C]
+2022-04-26 18:41:20 serial-service INFO >>> Disposing serial connection...
+2022-04-26 18:41:20 serial-service WARN <<< Not connected. Nothing to dispose.
+2022-04-26 18:41:20 daemon INFO Searching tools required for board arduino:avr:uno
+2022-04-26 18:41:20 daemon INFO Required tool [tool: {ToolName:"arduinoOTA",ToolVersion:"1.3.0",ToolPackager:"arduino"}]
+2022-04-26 18:41:20 daemon INFO Required tool [tool: {ToolName:"avr-gcc",ToolVersion:"7.3.0-atmel3.6.1-arduino7",ToolPackager:"arduino"}]
+2022-04-26 18:41:20 daemon INFO Required tool [tool: {ToolName:"avrdude",ToolVersion:"6.3.0-arduino17",ToolPackager:"arduino"}]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 1.3.0 Systems: [OS: i686-linux-gnu, OS: x86_64-linux-gnu, OS: arm-linux-gnueabihf, OS: aarch64-linux-gnu, OS: i386-apple-darwin11, OS: i686-mingw32]]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 7.3.0-atmel3.6.1-arduino7 Systems: [OS: arm-linux-gnueabihf, OS: aarch64-linux-gnu, OS: x86_64-apple-darwin14, OS: i686-mingw32, OS: i686-linux-gnu, OS: x86_64-linux-gnu]]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 6.3.0-arduino17 Systems: [OS: arm-linux-gnueabihf, OS: aarch64-linux-gnu, OS: x86_64-apple-darwin12, OS: x86_64-linux-gnu, OS: i686-linux-gnu, OS: i686-mingw32]]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 2.5-azd1b]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 1.4.0]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 2021.5.31 Systems: [OS: i686-mingw32, OS: x86_64-apple-darwin, OS: i386-apple-darwin, OS: x86_64-pc-linux-gnu, OS: i686-pc-linux-gnu]]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 1.3.2 Systems: [OS: i686-pc-linux-gnu, OS: x86_64-pc-linux-gnu, OS: i686-mingw32, OS: x86_64-mingw32, OS: x86_64-apple-darwin, OS: arm-linux-gnueabihf, OS: arm64-linux-gnueabihf]]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 3.1.0]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 0.2.3]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 3.0.4-gcc10.3-1757bed]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 5.5.1]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 5.8-arduino11 Systems: [OS: i686-pc-linux-gnu, OS: x86_64-pc-linux-gnu, OS: i686-mingw32, OS: x86_64-apple-darwin, OS: arm-linux-gnueabihf, OS: aarch64-linux-gnu]]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: gcc8_4_0-esp-2021r2]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: gcc8_4_0-esp-2021r2]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: gcc8_4_0-esp-2021r2]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 3.7.2-post1]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 3.0.0-gnu12-dc7f933]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 9.2.1-1.1]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 4.8.3-2014q1 Systems: [OS: arm-linux-gnueabihf, OS: i686-mingw32, OS: x86_64-apple-darwin, OS: x86_64-pc-linux-gnu, OS: i686-pc-linux-gnu]]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 0.9.1 Systems: [OS: i686-pc-linux-gnu, OS: x86_64-pc-linux-gnu, OS: i686-mingw32, OS: x86_64-mingw32, OS: x86_64-apple-darwin, OS: arm-linux-gnueabihf, OS: arm64-linux-gnueabihf]]
+2022-04-26 18:41:20 daemon INFO Tool required for upload [tool: Version: 1.0.5 Systems: [OS: i686-pc-linux-gnu, OS: x86_64-pc-linux-gnu, OS: i686-mingw32, OS: x86_64-mingw32, OS: x86_64-apple-darwin, OS: arm-linux-gnueabihf, OS: arm64-linux-gnueabihf]]
+2022-04-26 18:41:27 serial-service INFO >>> Disposing serial connection...
+2022-04-26 18:41:27 serial-service WARN <<< Not connected. Nothing to dispose.
+2022-04-26 18:42:43 root ERROR Uncaught Exception: 
+2022-04-26 18:42:43 root ERROR Error: Connection got disposed.
+    at Object.dispose (/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/vscode-jsonrpc/lib/main.js:904:25)
+    at /home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/vscode-ws-jsonrpc/lib/socket/connection.js:14:41
+    at CallbackList.invoke (/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/vscode-jsonrpc/lib/events.js:62:39)
+    at Emitter.fire (/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/vscode-jsonrpc/lib/events.js:121:36)
+    at closeHandler (/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/vscode-jsonrpc/lib/main.js:240:26)
+    at CallbackList.invoke (/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/vscode-jsonrpc/lib/events.js:62:39)
+    at Emitter.fire (/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/vscode-jsonrpc/lib/events.js:121:36)
+    at WebSocketMessageReader.fireClose (/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/vscode-jsonrpc/lib/messageReader.js:111:27)
+    at WebSocketMessageReader.fireClose (/home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/vscode-ws-jsonrpc/lib/socket/reader.js:67:19)
+    at /home/gavin/ARDUINO/arduino-ide_2.0.0-rc5_Linux_64bit/resources/app/node_modules/vscode-ws-jsonrpc/lib/socket/reader.js:24:18
+2022-04-26 18:42:43 serial-service INFO >>> Disposing serial service...
+2022-04-26 18:42:43 serial-service INFO <<< Disposed serial service.

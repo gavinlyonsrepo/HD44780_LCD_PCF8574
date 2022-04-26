@@ -1,4 +1,4 @@
-# GPIO used in testing 
+# GPIO used in testing for I2C
 
 UNO/NANO I2C
 A4 SDA

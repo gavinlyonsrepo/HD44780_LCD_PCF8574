@@ -1,8 +1,8 @@
 /*
- * File: TestRun.cpp
+ * File: TestRu20X04n.cpp
  * Description: 
  * This file contains the "main" function for  project, a set of test sequence
- * to test the HD44780 LCD library
+ * to test the HD44780 LCD library 20x04
  * Author: Gavin Lyons.
  * Description: See URL for full details.
  * URL: https://github.com/gavinlyonsrepo/HD44780_LCD_PCF8574
@@ -10,7 +10,7 @@
  * Notes: 
   * (1) For description of entry modes , cursor types, custom characters 
  * and more see here http://dinceraydin.com/lcd/commands.htm
- * (2) This is for 16 column 2 row LCD 
+ * (2) This file is for 20 cols 4 row LCD
  */
 
 // Section: Included library 
@@ -23,7 +23,7 @@
 
 // Section: Globals
 // myLCD(rows , cols , PCF8574 I2C address)
-HD44780LCD myLCD( 2, 16, 0x27); // instantiate an object
+HD44780LCD myLCD( 4, 20, 0x27); // instantiate an object
 
 // Section: Function Prototypes
 
@@ -69,13 +69,12 @@ void loop() {
 } // End of Main
 
 // Section :  Functions
-
 void helloWorld(void) {
 	char teststr1[] = "Hello";
 	char teststr2[] = "World";
-	myLCD.PCF8574_LCDGOTO(LCDLineNumberOne, 0);
+	myLCD.PCF8574_LCDGOTO(LCDLineNumberTwo, 0);
 	myLCD.PCF8574_LCDSendString(teststr1);
-	myLCD.PCF8574_LCDGOTO(LCDLineNumberTwo , 0);
+	myLCD.PCF8574_LCDGOTO(LCDLineNumberThree , 0);
 	myLCD.PCF8574_LCDSendString(teststr2); // Display a string
 	myLCD.PCF8574_LCDSendChar('!'); // Display a single character
 	delay(DISPLAY_DELAY_1);
@@ -88,29 +87,78 @@ void cursorMoveTest(void) {
 }
 
 void scrollTest(void) {
-	for (uint8_t i = 0; i < 5; i++) {
+	for (uint8_t i = 0; i < 10; i++) {
 		myLCD.PCF8574_LCDScroll(LCDMoveRight, 1);
 		delay(DISPLAY_DELAY_2);
 	}
-	myLCD.PCF8574_LCDScroll(LCDMoveLeft, 5);
+	myLCD.PCF8574_LCDScroll(LCDMoveLeft, 10);
 	delay(DISPLAY_DELAY_2);
 }
 
 void gotoTest(void) {
-	char teststr3[] = "Line 2";
-	myLCD.PCF8574_LCDClearScreen();
-	myLCD.PCF8574_LCDGOTO(LCDLineNumberOne, 10);
-	myLCD.PCF8574_LCDSendChar('A');
-	myLCD.PCF8574_LCDGOTO(LCDLineNumberTwo , 2);
+  myLCD.PCF8574_LCDClearScreen();
+
+	char teststr1[] = "Line 1";
+  char teststr2[] = "Line 2";
+  char teststr3[] = "Line 3";
+  char teststr4[] = "Line 4";
+  char testchar = '!';
+  int columnPos = 0;
+
+  // Print a string to each line
+	
+	myLCD.PCF8574_LCDGOTO(LCDLineNumberOne, 0);
+	myLCD.PCF8574_LCDSendString(teststr1);
+	myLCD.PCF8574_LCDGOTO(LCDLineNumberTwo , 0);
+	myLCD.PCF8574_LCDSendString(teststr2);
+  myLCD.PCF8574_LCDGOTO(LCDLineNumberThree , 0);
 	myLCD.PCF8574_LCDSendString(teststr3);
+  myLCD.PCF8574_LCDGOTO(LCDLineNumberFour , 0);
+	myLCD.PCF8574_LCDSendString(teststr4);
 	delay(DISPLAY_DELAY);
+
+  myLCD.PCF8574_LCDClearScreen();
+
+  // Print out ASCII table one character at a time in every position
+  // with a unique goto command 
+  for (columnPos = 0 ;  columnPos <20 ; columnPos++)
+  {
+    myLCD.PCF8574_LCDGOTO(LCDLineNumberOne, columnPos);
+    myLCD.PCF8574_LCDSendChar(testchar++);
+  } //Line 1
+  delay(DISPLAY_DELAY_1);
+
+  for (columnPos = 0 ;  columnPos <20 ; columnPos++)
+  {
+    myLCD.PCF8574_LCDGOTO(LCDLineNumberTwo, columnPos);
+    myLCD.PCF8574_LCDSendChar(testchar++);
+  } //Line 2
+  delay(DISPLAY_DELAY_1);
+
+  for (columnPos = 0 ;  columnPos <20 ; columnPos++)
+  {
+    myLCD.PCF8574_LCDGOTO(LCDLineNumberThree, columnPos);
+    myLCD.PCF8574_LCDSendChar(testchar++);
+  } //Line 3
+  delay(DISPLAY_DELAY_1);
+
+  for (columnPos = 0 ;  columnPos <20 ; columnPos++)
+  {
+    myLCD.PCF8574_LCDGOTO(LCDLineNumberFour, columnPos);
+    myLCD.PCF8574_LCDSendChar(testchar++);
+  } // Line 4 
+  delay(DISPLAY_DELAY);
 }
 
 void clearLineTest(void)
 {
-	myLCD.PCF8574_LCDClearLine(LCDLineNumberTwo );
-	delay(DISPLAY_DELAY_2);
 	myLCD.PCF8574_LCDClearLine(LCDLineNumberOne);
+	delay(DISPLAY_DELAY_2);
+	myLCD.PCF8574_LCDClearLine(LCDLineNumberTwo);
+	delay(DISPLAY_DELAY_2);
+  myLCD.PCF8574_LCDClearLine(LCDLineNumberThree);
+	delay(DISPLAY_DELAY_2);
+  myLCD.PCF8574_LCDClearLine(LCDLineNumberFour);
 	delay(DISPLAY_DELAY_2);
 }
 
@@ -198,7 +246,7 @@ void customChar(void) {
 	myLCD.PCF8574_LCDCreateCustomChar(6, crossChar);
 	myLCD.PCF8574_LCDCreateCustomChar(7, enterChar); // Location 7
 
-	myLCD.PCF8574_LCDGOTO(LCDLineNumberOne, 0);
+	myLCD.PCF8574_LCDGOTO(LCDLineNumberThree, 0);
 
 	// Print out custom characters from 
 	// CGRAM locations 0-7

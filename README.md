@@ -21,7 +21,7 @@ Overview
 2. Backlight, scroll, cursor and entry-mode control.
 3. Custom character support + print class for numerical data.
 4. Hardware I2C 
-5. Tested on size 16x02 only but may work on other sizes (20x4 , 16X4 etc).
+5. Tested on size 16x02 + 20x04 (but may work on other sizes  eg 16X4 but not tested).
 
 * Author: Gavin Lyons
 
@@ -37,9 +37,13 @@ See link below for instruction for this and for the other methods too.
 Output
 ---------------------
 
-Output  of custom character test in test file.
+Output  of custom character test in testrun example  file on 16x02 display.
 
 ![ pic ](https://github.com/gavinlyonsrepo/HD44780_LCD_RPI/blob/main/extras/image/custom_output.jpg)
+
+20x04 display. 
+
+![ pic2 ](https://github.com/gavinlyonsrepo/HD44780_LCD_PCF8574/blob/main/extras/image/2004.jpg)
 
 Tested
 ------------------------

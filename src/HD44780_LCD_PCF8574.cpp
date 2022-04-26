@@ -235,13 +235,13 @@ void HD44780LCD::PCF8574_LCDGOTO(LCDLineNumber_e line, uint8_t col) {
 			break;
 		case LCDLineNumberThree:
 			if (_NumColsLCD == 20)
-				PCF8574_LCDSendCmd(LCD_LINE_ADR3_20 | col);
+				PCF8574_LCDSendCmd(LCD_LINE_ADR3_20 + col);
 			else
 				PCF8574_LCDSendCmd(LCD_LINE_ADR3_16 | col);
 			break;
 		case LCDLineNumberFour:
 			if (_NumColsLCD == 20)
-				PCF8574_LCDSendCmd(LCD_LINE_ADR4_20 | col);
+				PCF8574_LCDSendCmd(LCD_LINE_ADR4_20 + col);
 			else
 				PCF8574_LCDSendCmd(LCD_LINE_ADR4_16 | col);
 			;
