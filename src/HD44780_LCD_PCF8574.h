@@ -16,7 +16,8 @@
 #endif
 
 #include "Wire.h"
- 
+
+
 #ifndef LCD_HD44780_H
 #define LCD_HD44780_H
 
@@ -92,7 +93,7 @@ typedef enum {
 
 class HD44780LCD : public Print{ 
   public:
-	HD44780LCD(uint8_t NumRow, uint8_t NumCol, uint8_t I2Caddress);
+	HD44780LCD(uint8_t NumRow, uint8_t NumCol, uint8_t I2Caddress, TwoWire *twi = &Wire);
 	~HD44780LCD(){};
 	
 	void PCF8574_LCDInit (LCDCursorType_e);
@@ -130,7 +131,7 @@ class HD44780LCD : public Print{
 	uint8_t _LCDSlaveAddresI2C = 0x27 ;
 	uint8_t _NumRowsLCD = 2;
 	uint8_t _NumColsLCD = 16;
-		
+	TwoWire *wire;   
   }; // end of HD44780LCD class
 
 #endif // guard header ending 

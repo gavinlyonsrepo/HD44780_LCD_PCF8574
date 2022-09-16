@@ -4,12 +4,14 @@
 
 // Section : constructor
 
-HD44780LCD  :: HD44780LCD(uint8_t NumRow, uint8_t NumCol, uint8_t I2Caddress)
+HD44780LCD  :: HD44780LCD(uint8_t NumRow, uint8_t NumCol, uint8_t I2Caddress,TwoWire *twi)
 {
 	_NumRowsLCD = NumRow;
 	_NumColsLCD = NumCol;
 	_LCDSlaveAddresI2C  = I2Caddress;
+	  wire = twi;
 }
+
 
 // Section : Functions
 
@@ -27,9 +29,9 @@ void HD44780LCD::PCF8574_LCDSendData(unsigned char data) {
 	dataI2C[2] = dataLower | (LCD_DATA_BYTE_ON & _LCDBackLight); //enable=1 and rs =1 1101  YYYY-X-en-X-rs
 	dataI2C[3] = dataLower | (LCD_DATA_BYTE_OFF &  _LCDBackLight); //enable=0 and rs =1 1001 YYYY-X-en-X-rs
 
-	Wire.beginTransmission(_LCDSlaveAddresI2C);
-	Wire.write(dataI2C, 4) ;
-	TransmissionCode  = Wire.endTransmission();
+	wire->beginTransmission(_LCDSlaveAddresI2C);
+	wire->write(dataI2C, 4) ;
+	TransmissionCode  = wire->endTransmission();
 	if (TransmissionCode!= 0)
 	{
 		#ifdef LCD_SERIAL_DEBUG
@@ -58,9 +60,9 @@ void HD44780LCD::PCF8574_LCDSendCmd(unsigned char cmd) {
 	cmdI2C[2] = cmdLower | (LCD_CMD_BYTE_ON & _LCDBackLight); // YYYY-1100 YYYY-led-en-rw-rs ,enable=1 and rs =0
 	cmdI2C[3] = cmdLower | (LCD_CMD_BYTE_OFF & _LCDBackLight); // YYYY-1000 YYYY-led-en-rw-rs ,enable=0 and rs =0
 	
-	Wire.beginTransmission(_LCDSlaveAddresI2C);
-	Wire.write(cmdI2C, 4) ;
-	TransmissionCode  = Wire.endTransmission();
+	wire->beginTransmission(_LCDSlaveAddresI2C);
+	wire->write(cmdI2C, 4) ;
+	TransmissionCode  = wire->endTransmission();
 	if (TransmissionCode!= 0)
 	{
 		#ifdef LCD_SERIAL_DEBUG
@@ -283,10 +285,11 @@ void HD44780LCD::PCF8574_LCDBackLightSet(bool OnOff)
 bool HD44780LCD::PCF8574_LCD_I2C_ON()
 {
 	uint8_t TransmissionCode = 0;
-	Wire.begin();
-	Wire.setClock(100000UL);  
-	Wire.beginTransmission(_LCDSlaveAddresI2C);
-	TransmissionCode  = Wire.endTransmission();
+
+	wire->begin();
+	//Wire.setClock(100000UL); // V 1.2.0
+	wire->beginTransmission(_LCDSlaveAddresI2C);
+	TransmissionCode  = wire->endTransmission();
 	if (TransmissionCode!= 0)
 		{
 			#ifdef LCD_SERIAL_DEBUG

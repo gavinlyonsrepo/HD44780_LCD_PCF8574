@@ -1,3 +1,5 @@
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/paypalme/whitelight976)
+
 
 ![ lcd ](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/LCDPCF.jpg)
 
@@ -22,6 +24,7 @@ Overview
 3. Custom character support + print class for numerical data.
 4. Hardware I2C 
 5. Tested on size 16x02 + 20x04 (but may work on other sizes  eg 16X4 but not tested).
+6. Can support both I2C ports on the STM32 see tested section.
 
 * Author: Gavin Lyons
 
@@ -50,12 +53,13 @@ Tested
 
 Tested on following MCUs.
 The example files are setup for an UNO/NANO for the pin connections used 
-by for other MCU testing see extras/doc folder GPIO_MCU_used.txt file.
+by for other MCU testing see extras/doc folder GPIO_MCU_used.MD file.
 
 1. Arduino  UNO & NANO v3
 2. ESP8266 
 3. ESP32 
-4. STM32 "blue pill"
+4. STM32 "blue pill", Can support both I2C ports , In example files comment in #define STM32_BLUE_PILL_SETUP
+and pick which port you want. Added in Version 1.2.0.
 
 Ports
 ------------------------
