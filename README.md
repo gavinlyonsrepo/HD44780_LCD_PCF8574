@@ -67,11 +67,12 @@ by for other MCU testing see extras/doc folder GPIO_MCU_used.txt file.
 2. ESP8266 
 3. ESP32 
 4. STM32 "blue pill", Can support both I2C ports , Use STM32 example file. 
-
+5. Arduino UNO R4 minima
+6. 
 Notes
 ------------------------
 
 1. "stm32duino" board manager core used in testing STM32 "blue pill"
-2.  For description of entry modes , cursor types, custom characters etc [See]( http://dinceraydin.com/lcd/commands.htm) 
-3. 16X04 board not tested but should work.
+2. For description of entry modes , cursor types, custom characters etc [See]( http://dinceraydin.com/lcd/commands.htm) 
+3. 16X04 board not tested as not available but should work!
 4. I2C Debugging can be turned on by commenting in a define in header file. 
