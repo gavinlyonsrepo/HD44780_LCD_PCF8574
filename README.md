@@ -68,7 +68,7 @@ by for other MCU testing see extras/doc folder GPIO_MCU_used.txt file.
 3. ESP32 
 4. STM32 "blue pill", Can support both I2C ports , Use STM32 example file. 
 5. Arduino UNO R4 minima
-6. 
+
 Notes
 ------------------------
 
