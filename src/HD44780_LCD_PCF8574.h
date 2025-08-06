@@ -30,7 +30,7 @@ public:
 	
 	/*! Backlight Control ,  Command Byte Code */
 	enum LCDBackLight_e : uint8_t{
-		LCDBackLightOnMask = 0x0F, /**< XXXX-1111 , Turn on Back light */
+		LCDBackLightOnMask = 0x0F, /**< XXXX-1111, Turn on Back light */
 		LCDBackLightOffMask = 0x07 /**< XXXX-0111, Turn off Back light */
 	}; 
 	

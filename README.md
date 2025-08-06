@@ -26,8 +26,8 @@ Overview
 2. Backlight, scroll, cursor and entry-mode control.
 3. Custom character support + print class for numerical data.
 4. Hardware I2C 
-5. Tested on size 16x02 + 20x04 (but may work on other sizes  eg 16X4 but not tested).
-6. Can support both I2C ports on the STM32 see tested section.
+5. Tested on size 16x02 + 20x04 (but may work on other sizes  eg 16x04 but not tested).
+6. Can support both I2C ports on the STM32, see tested section.
 
 * Author: Gavin Lyons
 

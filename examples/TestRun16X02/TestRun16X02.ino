@@ -4,7 +4,7 @@
 	@brief 
 		 This file contains the "main" function for  project, a set of test sequence
  		 to test the HD44780_LCD_PCF8574 arduino  library. 16X02 display.
-	@note 
+	@test
 		-# Test 1 :: Hello world
 		-# Test 2 :: Move the cursor test
 		-# Test 3 :: Scroll the display test

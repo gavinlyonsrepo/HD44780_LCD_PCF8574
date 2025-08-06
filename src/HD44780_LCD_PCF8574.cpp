@@ -8,7 +8,7 @@
 #include "HD44780_LCD_PCF8574.h"
 
 /*!
-	@brief Constructor for class TM1638plus
+	@brief Constructor for class HD44780LCD
 	@param NumRow  Number of Rows/Lines in the LCD 
 	@param NumCol   Number of Columns  in the LCD 
 	@param I2Caddress  The PCF8574 I2C address, default is 0x27.
